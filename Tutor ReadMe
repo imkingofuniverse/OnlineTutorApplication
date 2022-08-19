@@ -1,0 +1,216 @@
+**insert tutor**
+
+http://localhost:9090/tutor/insertTutor
+
+INPUT:
+
+[
+    {
+        "tutorId": 1,
+        "name": "Ram",
+        "mobile": 999999999,
+        "email": "ram@gmail.com",
+        "schoolName": "delhi public school",
+        "qualification": "m.tech",
+        "subject": "Science",
+        "city": null
+    },
+    {
+        "tutorId": 2,
+        "name": "Lakshman",
+        "mobile": 999999991,
+        "email": "lakshman@gmail.com",
+        "schoolName": "delhi public school",
+        "qualification": "m.tech",
+        "subject": "Maths",
+        "city": null
+    },
+    {
+        "tutorId": 4,
+        "name": "Laksha",
+        "mobile": 999999991,
+        "email": "laksha@gmail.com",
+        "schoolName": "delhi public school",
+        "qualification": "m.tech",
+        "subject": "Maths",
+        "city": null
+    }
+]
+
+
+**view all tutors**
+
+http://localhost:9090/tutor/viewAllTutors
+
+OUTPUT:
+
+{
+        "tutorId": 1,
+        "name": "Ram",
+        "mobile": 999999999,
+        "email": "ram@gmail.com",
+        "schoolName": "delhi public school",
+        "qualification": "m.tech",
+        "subject": "Science",
+        "city": null
+    }
+
+
+**count tutors of subject**
+
+http://localhost:9090/tutor/countTutorsOfSubject/science
+
+OUTPUT : 1
+
+
+**view tutor of city**
+
+
+http://localhost:9090/tutor/viewTutorOfCity/delhi
+
+OUTPUT:
+
+[
+    {
+        "tutorId": 2,
+        "name": "Lakshman",
+        "mobile": 999999991,
+        "email": "lakshman@gmail.com",
+        "schoolName": "delhi public school",
+        "qualification": "m.tech",
+        "subject": "Maths",
+        "city": "Delhi"
+    },
+    {
+        "tutorId": 3,
+        "name": "Laksha",
+        "mobile": 999999991,
+        "email": "laksha@gmail.com",
+        "schoolName": "delhi public school",
+        "qualification": "m.tech",
+        "subject": "Maths",
+        "city": "Delhi"
+    }
+]
+
+
+**delete tutor**
+
+
+http://localhost:9090/tutor/deleteTutor
+
+INPUT:
+
+{
+    "tutorId": 3,
+    "name": "Laksha",
+    "mobile": 999999991,
+    "email": "laksha@gmail.com",
+    "schoolName": "delhi public school",
+    "qualification": "m.tech",
+    "subject": "Maths",
+    "city": null
+}
+
+
+**update tutor**
+
+http://localhost:9090/tutor/updateTutor
+
+INPUT:
+
+{
+    "tutorId": 3,
+    "name": "Laksha",
+    "mobile": 999999993,
+    "email": "laksha@gmail.com",
+    "schoolName": "delhi public school",
+    "qualification": "m.tech",
+    "subject": "Maths",
+    "city": "Delhi"
+}
+
+
+
+
+
+
+
+
+
+
+
+insert parent
+
+http://localhost:9090/parent/insertParent
+
+INPUT:
+
+[
+    {
+        "tutorId": 1,
+        "name": "Raman",
+        "mobile": 99993399999,
+        "email": "raman@gmail.com",
+        "city": null
+    },
+    {
+        "tutorId": 2,
+        "name": "Lakshmanrao",
+        "mobile": 99999992391,
+        "email": "lakshmanrao@gmail.com",
+        "city": null
+    },
+    {
+        "tutorId": 4,
+        "name": "Lakshya",
+        "mobile": 99997899991,
+        "email": "lakshya@gmail.com",
+        "city": null
+    }
+]
+
+
+view all parents
+
+http://localhost:9090/parent/parent
+
+OUTPUT:
+
+{
+       "tutorId": 1,
+        "name": "Raman",
+        "mobile": 99993399999,
+        "email": "raman@gmail.com",
+        "city": null
+    }
+
+
+delete parent
+
+
+http://localhost:9090/parent/deleteParent/4
+
+INPUT:
+
+{
+        "tutorId": 4,
+        "name": "Lakshya",
+        "mobile": 99997899991,
+        "email": "lakshya@gmail.com",
+        "city": null
+}
+
+
+update parent
+
+http://localhost:9090/parent/updateParent/4
+
+INPUT:
+
+{
+	     "tutorId": 4,
+        "name": "Lakshya",
+        "mobile": 99997899991,
+        "email": "lakshya@gmail.com",
+        "city": null
